@@ -7,7 +7,8 @@ using System.Threading.Tasks;
 
 namespace Ejemplo01
 {
-    public class CustomerRepository : IRepository<Customer>
+    public class CustomerRepository
+        : IRepository<Customer>
     {
         private readonly string _connectionString;
 
@@ -22,8 +23,8 @@ namespace Ejemplo01
 
             try
             {
-                using (SqlConnection connection
-                        = new SqlConnection(_connectionString))
+                using (SqlConnection connection =
+            new SqlConnection(_connectionString))
                 {
                     connection.Open();
                     SqlCommand command =
@@ -49,6 +50,7 @@ namespace Ejemplo01
             {
                 Console.WriteLine($"Error al recuperar clientes: {ex.Message}");
             }
+
             return customers;
         }
     }
