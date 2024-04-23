@@ -1,5 +1,4 @@
-﻿
-using Ejemplo01;
+﻿using Ejemplo01;
 using System.Configuration;
 
 string sqlServerConnectionString =
@@ -9,7 +8,9 @@ IRepository<Customer> repository
     = new CustomerRepository(sqlServerConnectionString);
 
 IEnumerable<Customer> customers = repository.GetAll();
+
 Console.WriteLine("Clientes de SQL Server");
+
 foreach (Customer customer in customers)
     Console.WriteLine($"Id: {customer.Id}, " +
         $"Nombre: {customer.FirstName}, " +

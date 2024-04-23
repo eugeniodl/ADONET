@@ -24,14 +24,13 @@ namespace Ejemplo01
             try
             {
                 using (SqlConnection connection =
-            new SqlConnection(_connectionString))
+                        new SqlConnection(_connectionString))
                 {
                     connection.Open();
                     SqlCommand command =
                         new SqlCommand("SELECT * FROM Customers",
                         connection);
-                    using (SqlDataReader reader
-                        = command.ExecuteReader())
+                    using (SqlDataReader reader = command.ExecuteReader())
                     {
                         while (reader.Read())
                         {
@@ -48,7 +47,8 @@ namespace Ejemplo01
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Error al recuperar clientes: {ex.Message}");
+                Console.WriteLine($"Error al recuperar clientes " +
+                    $"{ex.Message}");
             }
 
             return customers;
