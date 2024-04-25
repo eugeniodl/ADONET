@@ -5,7 +5,9 @@ VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ejemplo01", "Ejemplo01\Ejemplo01.csproj", "{458B741A-8064-4C62-8982-AC215F1F9BAF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Agenda", "Agenda\Agenda.csproj", "{B6826A72-1073-4F1B-A0EC-3BB668C0EB3E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Agenda", "Agenda\Agenda.csproj", "{B6826A72-1073-4F1B-A0EC-3BB668C0EB3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAdapterApp", "DataAdapterApp\DataAdapterApp.csproj", "{9F7AB44E-77FA-454F-A3AC-04FF12B37840}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{B6826A72-1073-4F1B-A0EC-3BB668C0EB3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B6826A72-1073-4F1B-A0EC-3BB668C0EB3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B6826A72-1073-4F1B-A0EC-3BB668C0EB3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F7AB44E-77FA-454F-A3AC-04FF12B37840}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F7AB44E-77FA-454F-A3AC-04FF12B37840}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F7AB44E-77FA-454F-A3AC-04FF12B37840}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F7AB44E-77FA-454F-A3AC-04FF12B37840}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
