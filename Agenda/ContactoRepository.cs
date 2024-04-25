@@ -95,17 +95,19 @@ namespace Agenda
                     command.Parameters.AddWithValue("@id", id);
                     using (SqlDataReader reader = command.ExecuteReader())
                     {
-                        reader.Read();
-                        Contacto contacto = new Contacto
+                        if(reader.Read())
                         {
-                            Id = reader.GetInt32(0),
-                            Nombre = reader.GetString(1),
-                            Apellido = reader.GetString(2),
-                            FechaNacimiento = reader.GetDateTime(3),
-                            Telefono = reader.GetInt32(4),
-                            Email = reader.GetString(5)
-                        };
-                        return contacto;
+                            Contacto contacto = new Contacto
+                            {
+                                Id = reader.GetInt32(0),
+                                Nombre = reader.GetString(1),
+                                Apellido = reader.GetString(2),
+                                FechaNacimiento = reader.GetDateTime(3),
+                                Telefono = reader.GetInt32(4),
+                                Email = reader.GetString(5)
+                            };
+                            return contacto;
+                        }                        
                     }
                 }
             }
@@ -114,6 +116,7 @@ namespace Agenda
 
                 throw new Exception($"Error al obtener contacto en la base de datos {ex.Message}");
             }
+            return null;
         }
 
         public void Insert(Contacto contacto)

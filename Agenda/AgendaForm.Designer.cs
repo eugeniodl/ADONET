@@ -28,80 +28,86 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
-            button4 = new Button();
-            dataGridView1 = new DataGridView();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            btnNuevo = new Button();
+            btnEditar = new Button();
+            btnEliminar = new Button();
+            btnActualizar = new Button();
+            dgvContactos = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)dgvContactos).BeginInit();
             SuspendLayout();
             // 
-            // button1
+            // btnNuevo
             // 
-            button1.Location = new Point(21, 24);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 0;
-            button1.Text = "Nuevo";
-            button1.UseVisualStyleBackColor = true;
+            btnNuevo.Location = new Point(21, 24);
+            btnNuevo.Name = "btnNuevo";
+            btnNuevo.Size = new Size(75, 23);
+            btnNuevo.TabIndex = 0;
+            btnNuevo.Text = "Nuevo";
+            btnNuevo.UseVisualStyleBackColor = true;
+            btnNuevo.Click += btnNuevo_Click;
             // 
-            // button2
+            // btnEditar
             // 
-            button2.Location = new Point(124, 24);
-            button2.Name = "button2";
-            button2.Size = new Size(75, 23);
-            button2.TabIndex = 1;
-            button2.Text = "Editar";
-            button2.UseVisualStyleBackColor = true;
+            btnEditar.Location = new Point(124, 24);
+            btnEditar.Name = "btnEditar";
+            btnEditar.Size = new Size(75, 23);
+            btnEditar.TabIndex = 1;
+            btnEditar.Text = "Editar";
+            btnEditar.UseVisualStyleBackColor = true;
+            btnEditar.Click += btnEditar_Click;
             // 
-            // button3
+            // btnEliminar
             // 
-            button3.Location = new Point(230, 24);
-            button3.Name = "button3";
-            button3.Size = new Size(75, 23);
-            button3.TabIndex = 2;
-            button3.Text = "Eliminar";
-            button3.UseVisualStyleBackColor = true;
+            btnEliminar.Location = new Point(230, 24);
+            btnEliminar.Name = "btnEliminar";
+            btnEliminar.Size = new Size(75, 23);
+            btnEliminar.TabIndex = 2;
+            btnEliminar.Text = "Eliminar";
+            btnEliminar.UseVisualStyleBackColor = true;
+            btnEliminar.Click += btnEliminar_Click;
             // 
-            // button4
+            // btnActualizar
             // 
-            button4.Location = new Point(437, 24);
-            button4.Name = "button4";
-            button4.Size = new Size(75, 23);
-            button4.TabIndex = 3;
-            button4.Text = "Actualizar";
-            button4.UseVisualStyleBackColor = true;
+            btnActualizar.Location = new Point(600, 24);
+            btnActualizar.Name = "btnActualizar";
+            btnActualizar.Size = new Size(75, 23);
+            btnActualizar.TabIndex = 3;
+            btnActualizar.Text = "Actualizar";
+            btnActualizar.UseVisualStyleBackColor = true;
+            btnActualizar.Click += btnActualizar_Click;
             // 
-            // dataGridView1
+            // dgvContactos
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(21, 74);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(491, 218);
-            dataGridView1.TabIndex = 4;
+            dgvContactos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvContactos.Location = new Point(21, 74);
+            dgvContactos.Name = "dgvContactos";
+            dgvContactos.ReadOnly = true;
+            dgvContactos.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvContactos.Size = new Size(654, 218);
+            dgvContactos.TabIndex = 4;
             // 
             // AgendaForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(538, 326);
-            Controls.Add(dataGridView1);
-            Controls.Add(button4);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            ClientSize = new Size(701, 326);
+            Controls.Add(dgvContactos);
+            Controls.Add(btnActualizar);
+            Controls.Add(btnEliminar);
+            Controls.Add(btnEditar);
+            Controls.Add(btnNuevo);
             Name = "AgendaForm";
             Text = "Mi Agenda";
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvContactos).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private Button button1;
-        private Button button2;
-        private Button button3;
-        private Button button4;
-        private DataGridView dataGridView1;
+        private Button btnNuevo;
+        private Button btnEditar;
+        private Button btnEliminar;
+        private Button btnActualizar;
+        private DataGridView dgvContactos;
     }
 }
