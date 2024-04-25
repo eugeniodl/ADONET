@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
+            txtNombre = new TextBox();
+            txtApellido = new TextBox();
             label2 = new Label();
             label3 = new Label();
-            dateTimePicker1 = new DateTimePicker();
+            dtpFechaNacimiento = new DateTimePicker();
             label4 = new Label();
-            textBox3 = new TextBox();
+            txtTelefono = new TextBox();
             label5 = new Label();
-            textBox4 = new TextBox();
-            button1 = new Button();
+            txtEmail = new TextBox();
+            btnGuardar = new Button();
             SuspendLayout();
             // 
             // label1
@@ -50,19 +50,19 @@
             label1.TabIndex = 0;
             label1.Text = "Nombre:";
             // 
-            // textBox1
+            // txtNombre
             // 
-            textBox1.Location = new Point(166, 28);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(201, 23);
-            textBox1.TabIndex = 1;
+            txtNombre.Location = new Point(166, 28);
+            txtNombre.Name = "txtNombre";
+            txtNombre.Size = new Size(201, 23);
+            txtNombre.TabIndex = 1;
             // 
-            // textBox2
+            // txtApellido
             // 
-            textBox2.Location = new Point(166, 73);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(201, 23);
-            textBox2.TabIndex = 3;
+            txtApellido.Location = new Point(166, 73);
+            txtApellido.Name = "txtApellido";
+            txtApellido.Size = new Size(201, 23);
+            txtApellido.TabIndex = 3;
             // 
             // label2
             // 
@@ -82,12 +82,12 @@
             label3.TabIndex = 4;
             label3.Text = "Fecha de Nacimiento:";
             // 
-            // dateTimePicker1
+            // dtpFechaNacimiento
             // 
-            dateTimePicker1.Location = new Point(167, 122);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(200, 23);
-            dateTimePicker1.TabIndex = 5;
+            dtpFechaNacimiento.Location = new Point(167, 122);
+            dtpFechaNacimiento.Name = "dtpFechaNacimiento";
+            dtpFechaNacimiento.Size = new Size(200, 23);
+            dtpFechaNacimiento.TabIndex = 5;
             // 
             // label4
             // 
@@ -98,12 +98,12 @@
             label4.TabIndex = 6;
             label4.Text = "Teléfono:";
             // 
-            // textBox3
+            // txtTelefono
             // 
-            textBox3.Location = new Point(166, 167);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(100, 23);
-            textBox3.TabIndex = 7;
+            txtTelefono.Location = new Point(166, 167);
+            txtTelefono.Name = "txtTelefono";
+            txtTelefono.Size = new Size(100, 23);
+            txtTelefono.TabIndex = 7;
             // 
             // label5
             // 
@@ -114,37 +114,38 @@
             label5.TabIndex = 8;
             label5.Text = "Correo Electrónico:";
             // 
-            // textBox4
+            // txtEmail
             // 
-            textBox4.Location = new Point(167, 215);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(200, 23);
-            textBox4.TabIndex = 9;
+            txtEmail.Location = new Point(167, 215);
+            txtEmail.Name = "txtEmail";
+            txtEmail.Size = new Size(200, 23);
+            txtEmail.TabIndex = 9;
             // 
-            // button1
+            // btnGuardar
             // 
-            button1.Location = new Point(236, 259);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 10;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
+            btnGuardar.Location = new Point(236, 259);
+            btnGuardar.Name = "btnGuardar";
+            btnGuardar.Size = new Size(75, 23);
+            btnGuardar.TabIndex = 10;
+            btnGuardar.Text = "Guardar";
+            btnGuardar.UseVisualStyleBackColor = true;
+            btnGuardar.Click += btnGuardar_Click;
             // 
             // GuardarContactoForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(413, 305);
-            Controls.Add(button1);
-            Controls.Add(textBox4);
+            Controls.Add(btnGuardar);
+            Controls.Add(txtEmail);
             Controls.Add(label5);
-            Controls.Add(textBox3);
+            Controls.Add(txtTelefono);
             Controls.Add(label4);
-            Controls.Add(dateTimePicker1);
+            Controls.Add(dtpFechaNacimiento);
             Controls.Add(label3);
-            Controls.Add(textBox2);
+            Controls.Add(txtApellido);
             Controls.Add(label2);
-            Controls.Add(textBox1);
+            Controls.Add(txtNombre);
             Controls.Add(label1);
             Name = "GuardarContactoForm";
             Text = "Guardar Contacto";
@@ -155,15 +156,15 @@
         #endregion
 
         private Label label1;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox txtNombre;
+        private TextBox txtApellido;
         private Label label2;
         private Label label3;
-        private DateTimePicker dateTimePicker1;
+        private DateTimePicker dtpFechaNacimiento;
         private Label label4;
-        private TextBox textBox3;
+        private TextBox txtTelefono;
         private Label label5;
-        private TextBox textBox4;
-        private Button button1;
+        private TextBox txtEmail;
+        private Button btnGuardar;
     }
 }
