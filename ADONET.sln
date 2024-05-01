@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ejemplo01", "Ejemplo01\Ejem
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Agenda", "Agenda\Agenda.csproj", "{0EB885CE-F13C-4274-A000-76B72A15ADB5}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAdapterApp", "DataAdapterApp\DataAdapterApp.csproj", "{6AD37338-5C40-4035-B020-653915992676}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{0EB885CE-F13C-4274-A000-76B72A15ADB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0EB885CE-F13C-4274-A000-76B72A15ADB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0EB885CE-F13C-4274-A000-76B72A15ADB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AD37338-5C40-4035-B020-653915992676}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AD37338-5C40-4035-B020-653915992676}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AD37338-5C40-4035-B020-653915992676}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AD37338-5C40-4035-B020-653915992676}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
